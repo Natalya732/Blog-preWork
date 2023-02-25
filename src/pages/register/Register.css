@@ -1,0 +1,61 @@
+/*To decide our height we gotta know that we cannot put height equals to 100vh, it would certainly overflow as our topbar is 50px*/
+.register{
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background:linear-gradient(rgba(265,265,265,0.5), rgba(265,265,265,0.5)) ,url("https://thumbs.dreamstime.com/b/office-table-desk-smartphone-other-supplies-p-pink-background-top-view-copy-space-flat-lay-122505933.jpg");
+    background-size: cover;
+}
+.box{
+    width: 480px;
+    display: flexbox;
+    flex-basis:5 ;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.registerTitle{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+}
+.registerForm{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.registerForm>label{
+    margin: 10px 0;
+}
+.registerInput{
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    background-color: #fff;
+    border: none;
+ }
+ .registerButton{
+     color: white;
+     margin-top: 20px;
+     cursor: pointer;
+     background-color: teal;
+     border: none;
+     border-radius: 10px;
+     padding: 4px 8px;
+}
+.registerLoginButton{
+    position: absolute;
+    top:60px;
+    right: 20px;
+    background-color:lightcoral;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 14px;
+}
